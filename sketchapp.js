@@ -5,7 +5,7 @@ let slider;
 var song;
 var button;
 var jumpButton;
-
+let canvas;
 function preload(){
     song = loadSound('ola-mazi2.mp3', loaded);
 }
@@ -14,7 +14,7 @@ function preload(){
 function setup() {
 
   select('#playbutton').mousePressed(togglePlaying);
-
+  let elt = document.getElementById('radio');
   canvas=createCanvas(windowWidth,windowHeight)
 //   slider = createSlider(0, width, 60, 10);
 //   slider.position(width/2-100, 3*height/4);
@@ -22,19 +22,19 @@ function setup() {
 //   slider.input(update);
   
 //   jumpButton.mousePressed(jumpSong);
-  
+  canvas.parent(elt);
 }
 
 function draw() {
   // let val = slider.value();
   // background(val, 100, 100, 1);
-  background(20);
+  background(15,27,48);
   for (i=1; i<21;i++){
-    stroke(200);
+    stroke(33,65,119);
     line(i*width/20,height/10,i*width/20,9*height/10) 
   }
   push();
-  strokeWeight(4);
+  strokeWeight(5);
 stroke('red');
   line(mouseX,height/10-10,mouseX, 9*height/10+10);
   pop();
