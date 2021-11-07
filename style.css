@@ -11,6 +11,7 @@ body{
     flex-direction: column;
     color:white;
     height:100%;
+    width:100%;
     /* margin:auto;
     position: relative; */
     /* height:100%; */
@@ -64,6 +65,8 @@ border-radius: 2.02523px;
 h1{
     margin:40px;
     font-weight: normal;
+    text-align: center;
+    line-height: 140%;
 }
 main{
     display:flex;
@@ -126,14 +129,14 @@ canvas{
     align-items: center;
     padding: 60px;
     align-self: center;
-    width: 100%;
-    height: 30%;
+    width: 70%;
+    /* height: 30%; */
     left: 0px;
     top: 0px;
     
     background: #172B4E;
     box-shadow: 0px 4px 171px rgba(0, 0, 0, 0.25);
-        max-width:30%;
+        max-width:700px;
         /* height:40%; */
         margin:20px;
 
