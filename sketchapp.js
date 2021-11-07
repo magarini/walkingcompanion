@@ -15,7 +15,7 @@ function setup() {
 
   select('#playbutton').mousePressed(togglePlaying);
   let elt = document.getElementById('radio');
-  canvas=createCanvas(windowWidth,windowHeight)
+  canvas=createCanvas(displayWidth, displayHeight)
 //   slider = createSlider(0, width, 60, 10);
 //   slider.position(width/2-100, 3*height/4);
 //   slider.style('width', '200px');
